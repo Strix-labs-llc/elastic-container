@@ -172,7 +172,6 @@ elastic
 
 Stopping will:
 - stop the Elasticsearch and Kibana containers without deleting them
-- (4/4/2023) We're tracking [an issue](https://github.com/peasead/elastic-container/issues/23) where if you don't run the `stop` command, and then reboot the host, the Fleet server can't retain its state and fails. Please run `stop` before rebooting the host that is running the stack
 
 ```
 $ ./elastic-container.sh stop
@@ -242,7 +241,7 @@ In `.env`, the variables are defined, below are the variables that can be change
 ```
 ELASTIC_PASSWORD="changeme"
 KIBANA_PASSWORD="changeme"
-STACK_VERSION="8.10.2"
+STACK_VERSION="8.11.2"
 ```
 
 If you want to change the default values, simply replace whatever is appropriate in the variable declaration.
